@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 2</title>
+<head>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+<script type="text/javascript" language="javascript">
+ function addNewRow()
+ {
+    var table = document.getElementById("table1");
+    var tr = table.insertRow();
+    var td = tr.insertCell();
+    td.innerHTML= "Cell1";
+
+    td = tr.insertCell();
+    td.innerHTML= "Cell2";  
+ }
+</script>
+</head>
+<body>
+    <table id="table1" border="1" cellpadding="0" cellspacing="0" width="10%">
+        <tr id="row1">
+            <td>addCell1</td>
+            <td>addCell2</td>
+                
+        </tr>
+    </table>
+    <input type="button" onClick="addNewRow()" value="Add New"/>
+</body>
+
+
+</html>
